@@ -1,6 +1,6 @@
 const Content = () => {
     return (
-      <div className="flex flex-col gap-y-16 w-full px-[415px] pt-[84px]">
+      <div className="flex flex-col gap-y-16 px-[415px] pt-[84px]">
           <div className="flex flex-col gap-y-10">
               <h1 className="font-space-grotesk font-semibold text-5xl leading-[115%] tracking-[-2px] text-left text-swamp-blue">
                   Решения
