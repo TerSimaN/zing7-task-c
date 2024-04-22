@@ -20,8 +20,10 @@ const config: Config = {
       colors: {
         'swamp-light-grey': '#7f8c89',
         'swamp-gray': '#3c4a47',
+        'swamp-dark-gray': '#394649',
         'swamp-blue': '#01303a',
-        'swamp-green': '#083c2f'
+        'swamp-green': '#083c2f',
+        'swamp-yellow': '#e7f874'
       }
     },
   },
