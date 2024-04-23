@@ -11,7 +11,7 @@ const Nav = () => {
                     <a href="/">Начало</a>
                 </li>
                 {links.map((link) => (
-                    <li className="text-swamp-gray">
+                    <li key={link} className="text-swamp-gray">
                         <a>{link}</a>
                     </li>
                 ))}

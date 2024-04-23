@@ -27,7 +27,7 @@ const CaseStudies = () => {
             </h1>
             <div className="flex flex-col md:flex-row gap-x-6 gap-y-6">
                 {images.map((image) => (
-                    <div className="flex flex-col gap-y-2 md:gap-y-8">
+                    <div key={image.imageAlt} className="flex flex-col gap-y-2 md:gap-y-8">
                         <Image
                             src={image.iamgeSrc}
                             alt={image.imageAlt}
