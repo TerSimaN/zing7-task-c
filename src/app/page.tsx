@@ -1,28 +1,22 @@
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
-import Image from "next/image";
-import { truck } from "./assets/images";
 import Content from "@/components/Content";
 import Contact from "@/components/Contact";
+import CaseStudies from "@/components/CaseStudies";
 
 export default function Home() {
   return (
-    <main className="relative">
+    <main className="flex flex-col relative w-full md:container md:mx-auto px-4 items-center">
       <Nav />
-      <section className="flex flex-col justify-center items-center w-full pt-[155px] pb-24">
-        <Hero />
-        <div className="px-[316px] pt-16">
-          <Image
-            src={truck}
-            alt="truck"
-            width={969}
-            height={690}
-          />
-        </div>
+      <Hero />
+      <section className="flex flex-col justify-center items-center xl:max-w-[50%] mt-20">
         <Content />
       </section>
-      <section className="flex flex-col w-full bg-swamp-dark-gray">
+      <section className="flex flex-col items-center w-screen mt-24 bg-swamp-dark-gray">
         <Contact />
+      </section>
+      <section className="flex justify-center items-center xl:max-w-[75%] mt-24 md:mb-28 mb-16">
+        <CaseStudies />
       </section>
     </main>
   );

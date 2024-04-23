@@ -1,10 +1,19 @@
+import { truck } from "@/app/assets/images"
+import Image from "next/image"
+
 const Hero = () => {
   return (
-    <div className="flex h-[234px]">
-        <h1 className="w-[931px] font-inter font-semibold text-center text-7xl leading-[108%] tracking-[-4px] text-swamp-blue">
+    <section className="flex flex-col justify-center items-center gap-16 mt-[72px] xl:max-w-[60%]">
+        <h1 className="font-inter font-semibold text-center max-sm:text-5xl text-7xl leading-[108%] sm:tracking-[-4px] text-swamp-blue">
             Гъвкави решения за сухопътен транспорт за всеки клиент
         </h1>
-    </div>
+        <Image
+          src={truck}
+          alt="truck"
+          width={969}
+          height={690}
+        />
+    </section>
   )
 }
 
